@@ -1,0 +1,52 @@
+body {
+  min-height: 500px;
+  padding-top: 70px;
+}
+
+.table-user-information > tbody > tr {
+    border-top: 1px solid rgb(221, 221, 221);
+}
+
+.table-user-information > tbody > tr:first-child {
+    border-top: 0;
+}
+
+
+.table-user-information > tbody > tr > td {
+    border-top: 0;
+}
+.toppad {
+    margin-top:20px;
+}
+
+.pull-right {
+  float: right !important;
+  margin-right: 10px
+}
+
+.panel-body{
+    paddding: 15px;
+}
+
+fieldset.propietario-border {
+    width: 90%;
+    margin: 20px auto;
+    border: 1px groove #ddd !important;
+    padding: 0 1.4em 1.4em 1.4em !important;
+    /*margin: 0 0 1.5em 0 !important;*/
+    -webkit-box-shadow:  0px 0px 0px 0px #000;
+            box-shadow:  0px 0px 0px 0px #000;
+}
+
+/*legend.propiertatio-border {
+    font-size: 1.2em !important;
+    font-weight: bold !important;
+    text-align: left !important;
+
+}*/
+
+legend.propietario-border {
+    width:inherit; /* Or auto */
+    padding:0 10px; /* To give a bit of padding on the left and right */
+    border-bottom:none;
+}
