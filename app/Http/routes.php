@@ -25,11 +25,26 @@ Route::post('formulario2', [
         'uses' => 'formulariosController@formulario2'
 ]);
 
+Route::get('formulario2', [
+        'as' => 'formulario2',
+        'uses' => 'formulariosController@getFormulario2'
+]);
+
 Route::post('formulario3', [
         'as' => 'formulario3',
         'uses' => 'formulariosController@formulario3'
 ]);
 
+Route::get('formulario3', [
+        'as' => 'formulario3',
+        'uses' => 'formulariosController@getFormulario3'
+]);
 
+Route::post('formulario4', [
+        'as' => 'formulario4',
+        'uses' => 'formulariosController@formulario4'
+]);
 
-
+Route::post('guardar', function () {
+    dd(\Request::all());
+});

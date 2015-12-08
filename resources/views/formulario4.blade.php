@@ -1,26 +1,14 @@
 @extends ('template.layout')
 
-@section ('title') Formulario 3 @stop
+@section ('title') Formulario 4 @stop
 
 @section ('contenido')
 
 @include('template/errors')
 
-<?php
-if ( session('data') )
-	{
-		$data = [ 
-			'nombre' => session('data')['nombre'], 
-			'apellido' => session('data')['apellido'],
-			'materno' => session('data')['materno'],
-			'fuck' => session('data')['fuck']
-		];
-	}
-?>
-
 Formulario3
 
-{!! Form::open(array('url' => 'formulario4')) !!}
+{!! Form::open(array('url' => 'guardar')) !!}
 
 	<br>
 	<br>
@@ -47,8 +35,8 @@ Formulario3
 	{!! Form::label('fuck', 'Variable hidden Fuck') !!}
 	{!! Form::text('fuck', $data['fuck']) !!}
 
-	{!! Form::label('f', 'Al form 4') !!}
-	{!! Form::text('f') !!}
+	{!! Form::label('f', 'Variable f') !!}
+	{!! Form::text('f', $data['f']) !!}
 
 <br>
 <br>
